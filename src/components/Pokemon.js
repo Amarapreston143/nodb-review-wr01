@@ -14,7 +14,12 @@ class Pokemon extends Component {
   handleSaveName() {}
 
   render() {
-    return <div>Pokemon.js</div>
+    return (
+      <div>
+        <img src={this.props.data.image} alt={this.props.data.name} />
+        <p>{this.props.data.name}</p>
+      </div>
+    )
   }
 }
 
