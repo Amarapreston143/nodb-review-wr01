@@ -18,6 +18,9 @@ class Pokemon extends Component {
       <div>
         <img src={this.props.data.image} alt={this.props.data.name} />
         <p>{this.props.data.name}</p>
+        <button onClick={() => this.props.releasePokemon(this.props.data.id)}>
+          Release
+        </button>
       </div>
     )
   }
