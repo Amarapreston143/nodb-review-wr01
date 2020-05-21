@@ -16,7 +16,9 @@ function Pokedex(props) {
   return (
     <div>
       <h2>Pokedex</h2>
-      <div style={{ display: 'flex', justifyContent: 'center' }}>
+      <div
+        style={{ display: 'flex', justifyContent: 'center', flexWrap: 'wrap' }}
+      >
         {pokemonMap}
       </div>
     </div>
